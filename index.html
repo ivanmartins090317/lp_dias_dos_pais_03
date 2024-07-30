@@ -1,0 +1,255 @@
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- GOOGLE FONTS Neuton-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+  rel="stylesheet">
+<!-- GOOGLE FONTS Open sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  rel="stylesheet">
+
+<!-- LIB CAROUSEL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- METRICAS FAST SHOP -->
+<link rel="stylesheet" href="https://fastshopwr-a.akamaihd.net/spot/metrics/metrics.css">
+
+<style>
+ /* PROPIEDADE DEFAULT PARA A PAGINA */
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+#corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: "Neuton", serif; color: #000000;overflow: hidden; background:#FFFFFF; text-align: justify;} #corpo h1{
+text-align: center; padding: 1%; }
+a{   text-decoration: none;   color:#FFFFFF; }
+a:hover{   text-decoration: none;   color:#FFFFFF; }
+/* PADRÃO PRA DEIXAR A PRIMEIRA LETRA MAUISCULA */
+.dropcap {  font-size: 4em;     line-height: 0.7;     padding-right: 0.2vw; vertical-align: sub;  }
+/* BANNER TOPO */
+#corpo .banner_topo::before{ padding: 0; padding-top: 41.0625%;} .container { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+/* APRESENTA DO ARTISTA TEXTO */
+#corpo .apresenta-artista { width: 100%; text-align: center; font-size: 24px; background: #FAF9FA; margin-bottom: 2%; padding: 1%; }
+#corpo .apresenta-artista h2{ font-size: 1.9vw; font-family: "Open Sans", sans-serif;; font-weight: 400; }
+#corpo .apresenta-artista p{ font-size: 1.5vw;  font-family: "Open Sans", sans-serif;}
+#corpo hr{ width: 55%; margin: 0 auto 3%; }
+
+/* CONTEUDO PRINCIPAL */
+#corpo .content{ width: 75%; margin:0 auto; }
+ 
+#corpo .content .bloco-texto::before{ width: 0%; padding:15% 16%; }
+#corpo .content .bloco-texto picture img{ width: 100%; }
+#corpo .content .bloco-texto picture{ width: 30%; margin-top: 3%; }
+#corpo .content .bloco-texto{ display: flex; align-items: center; }
+
+/* BANNER MEIO */
+#corpo .content .banner-meio::before{ padding: 18%; }
+#corpo .content .banner-meio picture img{ width: 100%; }
+#corpo .content .texto-banner-meio{ margin-bottom: 4%; }
+/* ROTATIVO DE IMAGENS */
+#corpo .content .bloco-imagem-flex::before{ padding: 17%; } 
+#corpo .content .bloco-imagem-flex{ width: 100%; }
+#corpo .content .bloco-imagem-flex .fast_rotativo picture{ position: relative; }
+#corpo .content .bloco-imagem-flex .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; }
+/* ROTATIVO PRODUTOS */
+ 
+#corpo .content .product-section .bloco-product::before{ padding: 19%; }
+#corpo .content .product-section { text-align: center; margin: 6% 0; }
+#corpo .content .product-section h2{ margin-bottom: 2%; }
+#corpo .content .product-section .bloco-product{ width: 96%; margin: 0 auto;}
+#corpo .content .product-section .bloco-product .fast_rotativo-2 picture{ position: relative; }
+#corpo .content .product-section .bloco-product .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; left:0; }
+.button { display: inline-block; background-color: #000; color: #fff; padding: 10px 100px; padding: 1.5% 8%; text-decoration: none; border-radius: 999px; margin-top: 5%;  font-family: "Open Sans", sans-serif;}
+@media (min-width: 1600px){
+
+#corpo p{ font-size: 1.4em; } 
+}
+
+@media (max-width: 1100px) {
+
+#corpo h1{ font-size: 1em; padding: 3%; }
+/* BANNER TOPO */
+#corpo .banner_topo::before { padding-top: 71.0625%; }
+/* TEXTO APRESENTACAO */
+#corpo .apresenta-artista h2 { font-size: 3.2vw; font-weight: 400; }
+#corpo hr.topo{ display: none; }
+/* CONTETUDO PRINCIPAL */
+#corpo .content { width: 100%; margin: 0 auto; }
+#corpo .content p{ width:95%; margin: 0 auto 3%; }
+#corpo .content .bloco-texto::before { width: 71%; padding: 41%; }
+#corpo .content .bloco-texto{ display:flex; flex-direction:column; }
+#corpo .content .bloco-texto .texto{ margin-bottom:3%; }
+#corpo .content .bloco-texto picture { width: 95%; margin: 0 auto; }
+/* BANNER MEIO */
+#corpo .content .banner-meio::before { padding: 40%; }
+/* ROTATIVO IMAGENS PAI */
+#corpo .content .bloco-imagem-flex::before { padding: 61%; }
+#corpo .content .bloco-imagem-flex{ width: 100%; margin-left:2%; }
+/* ROTATIVO PRODUTO */
+#corpo .content .product-section .bloco-product::before { padding: 47%; }
+#corpo hr.botton{ width: 100%; }
+#corpo .content .product-section .bloco-product{ width: 100%; margin-left: 2%; }
+/* BOTÃO FINAL LP */
+.button{ padding:2% 25%; font-size: 5vw; }
+
+.fast_rotativo .owl-dots { display: block; position: relative; margin: 10% auto; width: 100%; text-align: center; }
+.fast_rotativo .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
+.fast_rotativo .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
+.fast_rotativo .owl-dots .owl-dot:hover span, 
+.fast_rotativo .owl-dots .owl-dot.active span { background-color: #8f8e8e; } 
+ 
+}
+</style>
+
+<div id="corpo">
+ <h1 class="title">Título Título Título Título</h1>
+ <div class="wrapper-aspect-ratio banner_topo">
+ <picture class="inner">
+ <source media="(max-width: 1100px)"
+ srcset="files_lp_03/imagem_topo_mobile.png">
+ <img width="100%" height="auto"
+ src="files_lp_03/imagem_topo.png"
+ alt="Foto Ike Levy com filho">
+ </picture>
+ </div>
+ <div class="apresenta-artista">
+ <h2>Ike Levy</h2>
+ <p>Fotógrafo e Motociclista</p>
+ </div>
+ <hr class="topo">
+ <div class="content">
+ <p><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+ dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+ book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
+ unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+ recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ 
+ 
+ <div class="wrapper-aspect-ratio bloco-texto">
+ <picture class="inner">
+ <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_01.png">
+ <img src="files_lp_03/imagem_01.png" alt="Foto Ike Levy com filho" class="additional-images">
+ </picture>
+ <div class="texto">
+ <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+ dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+ book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
+ unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+ recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ </div>
+ </div>
+ <div class="wrapper-aspect-ratio banner-meio">
+ <picture class="inner">
+ <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_02_mobile.png">
+ <img src="files_lp_03/imagem_02.png" alt="foto Ike Levy com familia" class="additional-images">
+ </picture>
+ </div>
+ <p class="texto-banner-meio"><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+ dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+ book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
+ unchanged. It was popularised in the 1960s</p>
+ <!-- ROTATIVO IMAGENS PAI -->
+ <div class="wrapper-aspect-ratio bloco-imagem-flex">
+ <div class="inner">
+ <div id="fast_rotativo" class="owl-carousel fast_rotativo">
+ <picture >
+ <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_01.png">
+ <img src="files_lp_03/imagem_rotativo_01.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+
+ </picture>
+ <picture >
+ <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_02.png">
+ <img src="files_lp_03/imagem_rotativo_02.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+ </picture>
+ <picture >
+ <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_03.png">
+ <img src="files_lp_03/imagem_rotativo_03.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+ </picture>
+ </div>
+
+ </div>
+ </div>
+ <hr class="botton">
+ <div class="product-section">
+ <h2>Pet Tech Lover</h2>
+ <!-- ROTATIVO PRODUTOS -->
+ <div class="wrapper-aspect-ratio bloco-product">
+ <div class="inner">
+ <div id="fast_rotativo-2" class="owl-carousel fast_rotativo">
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_01_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_01_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <a href="#" class="link"></a>
+ </picture>
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_02_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_02_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <a href="#" class="link"></a>
+ </picture>
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_03_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_03_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <a href="#" class="link"></a>
+ </picture>
+ </div>
+ 
+ </div>
+ </div>
+ 
+ <a href="#" class="button">Saiba mais</a>
+ </div>
+ </div>
+ 
+</div>
+
+<script>
+ var carouselDelay = 1000;
+
+ if (carouselDelay) {
+  setTimeout(function () {
+   document.querySelector('#fast_rotativo').style.display = 'block';
+
+ $('#fast_rotativo').owlCarousel({
+        items: 1,
+        loop: true,
+        smartSpeed: 600,
+        responsiveClass: true,
+        nav: false,
+        dots:true,
+        navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+        responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay:false } },
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true
+        });
+ }, carouselDelay);
+ }
+ if (carouselDelay) {
+  setTimeout(function () {
+   document.querySelector('#fast_rotativo').style.display = 'block';
+
+ $('#fast_rotativo-2').owlCarousel({
+    items: 1,
+    loop: true,
+    smartSpeed: 600,
+    responsiveClass: true,
+    nav: false,
+    navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+    responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay:false } },
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true
+    });
+ }, carouselDelay);
+ }
+
+</script>
+
+ 
