@@ -29,7 +29,7 @@ text-align: center; padding: 1%; }
 a{   text-decoration: none;   color:#FFFFFF; }
 a:hover{   text-decoration: none;   color:#FFFFFF; }
 /* PADRÃO PRA DEIXAR A PRIMEIRA LETRA MAUISCULA */
-.dropcap {  font-size: 4em;     line-height: 0.7;     padding-right: 0.2vw; vertical-align: sub;  }
+.dropcap {  float: inline-start; font-size: 4em;     line-height: 0.7;     padding-right: 0.2vw; vertical-align: sub;  }
 /* BANNER TOPO */
 #corpo .banner_topo::before{ padding: 0; padding-top: 41.0625%;} .container { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 /* APRESENTA DO ARTISTA TEXTO */
@@ -45,16 +45,21 @@ a:hover{   text-decoration: none;   color:#FFFFFF; }
 #corpo .content .bloco-texto picture img{ width: 100%; }
 #corpo .content .bloco-texto picture{ width: 30%; margin-top: 3%; }
 #corpo .content .bloco-texto{ display: flex; align-items: center; }
+#corpo .content .bloco-texto .texto p{ margin-bottom: 3%;}
 
 /* BANNER MEIO */
 #corpo .content .banner-meio::before{ padding: 18%; }
 #corpo .content .banner-meio picture img{ width: 100%; }
-#corpo .content .texto-banner-meio{ margin-bottom: 4%; }
+#corpo .content .texto-banner-meio{ width: 54%; margin:2% auto; text-align:center;}
+#corpo .content .texto-banner-meio-complemento{margin: 0 auto 5%; text-align:center}
 /* ROTATIVO DE IMAGENS */
 #corpo .content .bloco-imagem-flex::before{ padding: 17%; } 
 #corpo .content .bloco-imagem-flex{ width: 100%; }
 #corpo .content .bloco-imagem-flex .fast_rotativo picture{ position: relative; }
 #corpo .content .bloco-imagem-flex .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; }
+/* TEXTOS */
+#corpo p.texto-rotativo-pai-01{text-align: center;margin: 2% auto;}
+#corpo p.texto-rotativo-pai-02{text-align: center;margin: 0 auto 5%;}
 /* ROTATIVO PRODUTOS */
  
 #corpo .content .product-section .bloco-product::before{ padding: 19%; }
@@ -63,19 +68,21 @@ a:hover{   text-decoration: none;   color:#FFFFFF; }
 #corpo .content .product-section .bloco-product{ width: 96%; margin: 0 auto;}
 #corpo .content .product-section .bloco-product .fast_rotativo-2 picture{ position: relative; }
 #corpo .content .product-section .bloco-product .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; left:0; }
+.mt{margin-top: 4%;}
 .button { display: inline-block; background-color: #000; color: #fff; padding: 10px 100px; padding: 1.5% 8%; text-decoration: none; border-radius: 999px; margin-top: 5%;  font-family: "Open Sans", sans-serif;}
-@media (min-width: 1600px){
 
+@media (min-width: 1600px){
 #corpo p{ font-size: 1.4em; } 
 }
 
 @media (max-width: 1100px) {
 
-#corpo h1{ font-size: 1em; padding: 3%; }
+#corpo h1{ font-size: 1.4em; padding: 3%; }
 /* BANNER TOPO */
 #corpo .banner_topo::before { padding-top: 71.0625%; }
 /* TEXTO APRESENTACAO */
 #corpo .apresenta-artista h2 { font-size: 3.2vw; font-weight: 400; }
+.apresenta-artista p{font-size: 2.5vw;}
 #corpo hr.topo{ display: none; }
 /* CONTETUDO PRINCIPAL */
 #corpo .content { width: 100%; margin: 0 auto; }
@@ -89,6 +96,8 @@ a:hover{   text-decoration: none;   color:#FFFFFF; }
 /* ROTATIVO IMAGENS PAI */
 #corpo .content .bloco-imagem-flex::before { padding: 61%; }
 #corpo .content .bloco-imagem-flex{ width: 100%; margin-left:2%; }
+/* TEXTO */
+ #corpo .content .texto-banner-meio{ width: 95%;}
 /* ROTATIVO PRODUTO */
 #corpo .content .product-section .bloco-product::before { padding: 47%; }
 #corpo hr.botton{ width: 100%; }
@@ -106,104 +115,152 @@ a:hover{   text-decoration: none;   color:#FFFFFF; }
 </style>
 
 <div id="corpo">
- <h1 class="title">Título Título Título Título</h1>
+ <h1 class="title">A diferença entre o Ver e o Olhar</h1>
  <div class="wrapper-aspect-ratio banner_topo">
  <picture class="inner">
  <source media="(max-width: 1100px)"
- srcset="files_lp_03/imagem_topo_mobile.png">
+ srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_topo_mobile.png">
  <img width="100%" height="auto"
- src="files_lp_03/imagem_topo.png"
+ src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_topo.png"
  alt="Foto Ike Levy com filho">
  </picture>
  </div>
  <div class="apresenta-artista">
- <h2>Ike Levy</h2>
- <p>Fotógrafo e Motociclista</p>
+ <h2>por Ike Levy</h2>
+ <p>Fotógrafo, Viajante, Motociclista e Pai da Nina e do Tony</p>
  </div>
  <hr class="topo">
  <div class="content">
- <p><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
- recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ <p><span class="dropcap">Q</span>ual a diferença entre ver e olhar? Para Ike Levy, pai, fotógrafo e apaixonado por esporte e viagem, ver é algo estático,
+é apenas o registro da cena. Mas, olhar é muito mais profundo, é sobre perceber, sentir, conhecer a história que levou à
+construção daquela cena. E é esse um dos principais valores que ele passa para os seus filhos: em um mundo cada vez mais
+digital, que sejamos, na</p>
+<p>mesma medida, analógicos. Sua missão é fazer com que seus filhos se apaixonem pela vida lá fora, pelo o que acontece na
+frente das lentes, e não apenas através delas. O dia a dia, o cotidiano, a estrada, o nascer e o envelhecer de todas as
+coisas, tudo isso deve ser sentido e apreciado. E, aí sim, poderemos contar com a tecnologia para registrar.</p>
  
  
  <div class="wrapper-aspect-ratio bloco-texto">
  <picture class="inner">
- <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_01.png">
- <img src="files_lp_03/imagem_01.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_01.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_01.png" alt="Foto Ike Levy com filho" class="additional-images">
  </picture>
  <div class="texto">
- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
- recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+ <p>“A nova geração é muito imediatista, rápida, não está aprendendo a apreciar os detalhes, as cores e as formas da vida.”
+Para Ike, é a união da tecnologia com os cinco sentidos humanos, que criará uma espécie de sexto sentido humano. E essa
+é a maior conexão que pode acontecer entre a geração de pais e seus filhos.</p>
+<p>Ike perdeu o seu pai quando tinha 10 anos de idade, por conta de uma doença cerebral. Hoje, apenas décadas mais tarde,
+entendeu que, apesar de uma breve vivência com ele, seu maior aprendizado foi a comunicação através do olhar e não do
+ver.</p>
+<p>Quando questionado sobre qual conselho deixaria para os pais de hoje, ele é categórico: “não esteja presente, seja
+presente”. Não importa se 10 minutos, 10 dias ou 10 anos, o tempo passa rápido, use-o com precisão.</p>
  </div>
  </div>
  <div class="wrapper-aspect-ratio banner-meio">
  <picture class="inner">
- <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_02_mobile.png">
- <img src="files_lp_03/imagem_02.png" alt="foto Ike Levy com familia" class="additional-images">
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_02_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_02.png" alt="foto Ike Levy com familia" class="additional-images">
  </picture>
  </div>
- <p class="texto-banner-meio"><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s</p>
+ <p class="texto-banner-meio">“A paternidade é sempre passageira, entre meu pai e eu foram apenas 10 anos. 
+Mas os valores que ela tem a chave de deixar, esses sim são eternos."</p>
+<p class="texto-banner-meio-complemento">“A tecnologia amplifica a sua capacidade de ver, mas é a vida real, sem nenhum filtro, que   que desenvolverá a sua
+capacidade de olhar."</p>
  <!-- ROTATIVO IMAGENS PAI -->
  <div class="wrapper-aspect-ratio bloco-imagem-flex">
  <div class="inner">
  <div id="fast_rotativo" class="owl-carousel fast_rotativo">
  <picture >
- <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_01.png">
- <img src="files_lp_03/imagem_rotativo_01.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_01.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_01.png" alt="Foto Ike Levy com filho" class="additional-images">
  <!-- <a href="#" class="link"></a> -->
 
  </picture>
  <picture >
- <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_02.png">
- <img src="files_lp_03/imagem_rotativo_02.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_02.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_02.png" alt="Foto Ike Levy com filho" class="additional-images">
  <!-- <a href="#" class="link"></a> -->
  </picture>
  <picture >
- <source media="(max-width: 1100px)" srcset="files_lp_03/imagem_rotativo_mobile_03.png">
- <img src="files_lp_03/imagem_rotativo_03.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_03.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_03.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+ </picture>
+ <picture >
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_01.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_01.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+
+ </picture>
+ <picture >
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_02.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_02.png" alt="Foto Ike Levy com filho" class="additional-images">
+ <!-- <a href="#" class="link"></a> -->
+ </picture>
+ <picture >
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_mobile_03.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_03.png" alt="Foto Ike Levy com filho" class="additional-images">
  <!-- <a href="#" class="link"></a> -->
  </picture>
  </div>
 
  </div>
  </div>
+
+<p class="texto-rotativo-pai-01">“As morais estão mudando, existe uma nova ética no mundo, com isso, a paternidade de hoje é sobre troca, e é isso que
+devemos entender.  Escutar e trocar com essa nova geração, é se tornar um ser humano melhor."</p>
+ <p class="texto-rotativo-pai-02">“Temos um combinado que na ida à escola não fazemos o uso de telas. Nossa única lente é o vidro das janelas do carro.
+Todos os dias, no caminho, falamos sobre avida, até a chegada. E assim, treinamos nosso olhar sobre a vida na mesma
+velocidade do carro."</p>
  <hr class="botton">
  <div class="product-section">
- <h2>Pet Tech Lover</h2>
+ <h2>Pai Sport Lover</h2>
  <!-- ROTATIVO PRODUTOS -->
  <div class="wrapper-aspect-ratio bloco-product">
  <div class="inner">
  <div id="fast_rotativo-2" class="owl-carousel fast_rotativo">
  <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_01_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_01_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_01_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_01_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt">Óculos JBL SoundGear Frames com Alto-falantes</p>
+ <a href="https://www.fastshop.com.br/web/p/d/JBLSNDGERO_PRD/oculos-jbl-soundgear-frames-com-alto-falantes-integrado-e-conexao-via-bluetooth-onix" class="link"></a>
  </picture>
  <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_02_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_02_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_02_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_02_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt" >Bicicleta Spinning Ergométrica Ziyou</p>
+ <a href="https://www.fastshop.com.br/web/p/d/3005598895_PRD/bicicleta-spinning-ergometrica-ziyou-zu250s-g2-bluetooth" class="link"></a>
  </picture>
  <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_03_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files_v2/imagem_rotativo_produto_03_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_03_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_03_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt">Galaxy Watch 7 BT 40mm Samsung Verde</p>
+ <a href="https://www.fastshop.com.br/web/p/d/SGSML300VRDZF_PRD/galaxy-watch-7-bt-40mm-samsung-verde-com-131-bluetooth-e-32gb" class="link"></a>
+ </picture>
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_01_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_01_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt">Óculos JBL SoundGear Frames com Alto-falantes</p>
+ <a href="https://www.fastshop.com.br/web/p/d/JBLSNDGERO_PRD/oculos-jbl-soundgear-frames-com-alto-falantes-integrado-e-conexao-via-bluetooth-onix" class="link"></a>
+ </picture>
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_02_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_02_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt" >Bicicleta Spinning Ergométrica Ziyou</p>
+ <a href="https://www.fastshop.com.br/web/p/d/3005598895_PRD/bicicleta-spinning-ergometrica-ziyou-zu250s-g2-bluetooth" class="link"></a>
+ </picture>
+ <picture>
+ <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_03_mobile.png">
+ <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files3/imagem_rotativo_produto_03_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+ <p class="mt">Galaxy Watch 7 BT 40mm Samsung Verde</p>
+ <a href="https://www.fastshop.com.br/web/p/d/SGSML300VRDZF_PRD/galaxy-watch-7-bt-40mm-samsung-verde-com-131-bluetooth-e-32gb" class="link"></a>
  </picture>
  </div>
  
  </div>
  </div>
  
- <a href="#" class="button">Saiba mais</a>
+ <a href="https://www.fastshop.com.br/web/c/4611686018425561516/lista_sport_lover" class="button">Saiba mais</a>
  </div>
  </div>
  
